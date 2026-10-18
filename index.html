@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1322" />
+  <title>GYM Flow | Retention SaaS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <style>::-webkit-scrollbar{display:none}body{margin:0;overscroll-behavior:none}</style>
+  <!-- Tailwind CDN: baad mein proper tailwind install se replace kar dena -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: { extend: {
+        colors: {
+          surface: "#0d1322", "surface-container-low": "#151b2b", "surface-container": "#191f2f",
+          "surface-container-high": "#222a3d", primary: "#14b8a6", "border-subtle": "#1e293b",
+          "on-surface": "#f1f5f9", "on-surface-variant": "#94a3b8", warning: "#f59e0b", danger: "#f43f5e"
+        },
+        fontFamily: { sans: ["Inter", "sans-serif"], display: ["Plus Jakarta Sans", "sans-serif"] }
+      } }
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased min-h-screen">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
